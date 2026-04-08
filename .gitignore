@@ -1,0 +1,93 @@
+# ============================================================
+# AMOE - Git ignore rules
+# Purpose: keep generated, machine-local, and temporary files
+#          out of version control.
+# ============================================================
+
+# ------------------------------------------------------------
+# CMake / build system generated files
+# ------------------------------------------------------------
+/build/
+/cmake-build-*/
+/CMakeFiles/
+/CMakeCache.txt
+/cmake_install.cmake
+/Makefile
+/install_manifest.txt
+/compile_commands.json
+
+# CTest / CMake testing artifacts
+/Testing/
+/CTestTestfile.cmake
+
+# ------------------------------------------------------------
+# Build outputs and binaries (C/C++)
+# ------------------------------------------------------------
+*.o
+*.obj
+*.lo
+*.la
+*.a
+*.lib
+*.so
+*.so.*
+*.dylib
+*.dll
+*.exe
+*.out
+*.app
+*.i
+*.ii
+
+# Dependency and debug symbol files
+*.d
+*.dSYM/
+*.su
+*.idb
+*.pdb
+
+# ------------------------------------------------------------
+# Common runtime outputs
+# ------------------------------------------------------------
+*.log
+*.tmp
+*.temp
+*.cache
+
+# ------------------------------------------------------------
+# macOS-specific files
+# ------------------------------------------------------------
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+
+# ------------------------------------------------------------
+# Editor / IDE files
+# ------------------------------------------------------------
+.vscode/
+!.vscode/
+!.vscode/extensions.json
+!.vscode/settings.json
+
+.idea/
+*.iml
+
+# Vim/Neovim swap/backup
+*.swp
+*.swo
+*~
+
+# ------------------------------------------------------------
+# Misc tools
+# ------------------------------------------------------------
+.clangd/
+.cache/
+
+# ------------------------------------------------------------
+# Optional: generated executable in project root
+# (Uncomment if your local workflow builds here)
+# ------------------------------------------------------------
+# /amoe
